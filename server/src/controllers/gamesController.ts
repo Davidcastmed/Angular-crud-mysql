@@ -3,6 +3,9 @@ import { Request, Response } from 'express';
 
 import pool from '../database';
 
+
+// here the methods for interact with the data from the dataBase
+
 class GamesController {
 
     public async list(req: Request, res: Response): Promise<void> {

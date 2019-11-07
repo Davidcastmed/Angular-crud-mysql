@@ -9,7 +9,7 @@ class GameRoutes {
     constructor() {
         this.config();
     }
-
+    // here are defined the routes for Games, the methods are defined in gamesControllers for example "gamesController.listAll"
     config() {
         this.router.get('/all', gamesController.listAll);
         this.router.get('/', gamesController.list);

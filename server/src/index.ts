@@ -1,4 +1,6 @@
-import express, { Application } from 'express';
+
+
+import express, { Application } from 'express'; // because is tsc, this will extract just the "application" property from express
 import morgan from 'morgan';
 import cors from 'cors';
 
@@ -25,8 +27,10 @@ class Server {
     }
 
     routes(): void {
+        // this will be the Routes reachable, from the files "indexRoutes" and "gamesRoutes" 
         this.app.use('/', indexRoutes);
         this.app.use('/api/games', gamesRoutes);
+        // in case there will be more routs, they will be declare here
 
     }
 

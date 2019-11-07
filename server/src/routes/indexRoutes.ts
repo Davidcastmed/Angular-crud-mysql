@@ -11,6 +11,7 @@ class IndexRoutes {
     }
 
     config(): void {
+        // this will be the route for Index, the logic will be in indexController in the methods
         this.router.get('/', indexController.index);
     }
 
