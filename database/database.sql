@@ -1,3 +1,4 @@
+/* this file can be also imported from a sql interface */
 CREATE DATABASE ng_games;
 
 USE ng_games;
