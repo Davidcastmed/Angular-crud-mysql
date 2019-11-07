@@ -22,5 +22,4 @@ class GameRoutes {
 }
 const gameRoutes = new GameRoutes()
 export default gameRoutes.router
-// export default new GameRoutes().router;
 
